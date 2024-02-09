@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/utils/motion";
-import styles from "@/app/style";
 import Image from "next/image";
 
 const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
@@ -25,7 +24,7 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
     ) : (
       <div className="absolute bottom-0 p-8 flex justify-start w-full flex-col bg-[rgba(0,0,0,0.5)] rounded-b-[24px]">
         <div
-          className={`${styles.flexCenter} w-[60px] h-[60px] rounded-[24px] glassmorphism mb-[16px]`}
+          className="flexCenter w-[60px] h-[60px] rounded-[24px] glassmorphism mb-[16px]"
         >
           <Image
             src="/headset.svg"
